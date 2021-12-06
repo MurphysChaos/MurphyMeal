@@ -94,7 +94,6 @@ class RecipeListViewController: UITableViewController {
                         print(error)
                     case .success(let image):
                         cell.recipeImageView.image = image
-                        print(image)
                     }
                 }
             }

@@ -68,6 +68,7 @@ class CategoryListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell")!
         let category = categoryList[indexPath.row]
         cell.textLabel?.text = category.strCategory
+        cell.detailTextLabel?.text = category.strCategoryDescription
 
         return cell
     }
